@@ -5,35 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A3_html_ex4</title>
     <style>
-        table {
-            border-collapse: separate;
-            border: 1px double;
-            margin-bottom: 20px;
-            margin: 10px;
+        table, th, td {
+            border: 1px solid black;
         }
-        th, td {
-            border: 1px double;
-            padding: 12px;
-            text-align: center;
-        }
-        table + table {
-            margin-top: 30px;
-        }
-        .flex-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 10px; 
-        }
-        .small-table {
-            width: 30%; 
-        }
-        .large-table {
+        .large-table{
             flex-grow: 1;
-            width: 100%;
+            width: 130px;
+            height: 130px;
+            text-align: center;
         }
         .checkmark {
             color: green;
-            font-size: 24px;
+            font-size: 45px;
+        }
+        .checkmark2 {
+            color: green;
+            font-size: 25px;
         }
     </style>
 </head>
@@ -67,7 +54,7 @@
     <table>
         <tr>
             <td>
-                <table class="small-table">
+                <table>
                     <tr>
                         <td>First</td>
                         <td>Row</td>
@@ -91,7 +78,7 @@
                 </table>
             </td>
             <td><span class="checkmark">&#10004;</span></td>
-            <td><span class="checkmark">&#10004;</span></td>
+            <td><span class="checkmark2">&#10004;</span></td>
         </tr>
     </table>
 </body>
