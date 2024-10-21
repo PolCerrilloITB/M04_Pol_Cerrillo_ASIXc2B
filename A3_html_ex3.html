@@ -23,17 +23,14 @@
         </li>
         <li>Milk</li>
     </ul>
-
     <h3>Coffee</h3>
     <ul>
         <li>black hot drink</li>
     </ul>
-
     <h3>Milk</h3>
     <ul>
         <li>white cold drink</li>
     </ul>
-
     <h3>Numbered list:</h3>
     <ol>
         <li>Apples</li>
@@ -41,7 +38,6 @@
         <li>Lemons</li>
         <li>Oranges</li>
     </ol>
-
     <h3>Letters list:</h3>
     <ol type="A">
         <li>Apples</li>
@@ -49,7 +45,6 @@
         <li>Lemons</li>
         <li>Oranges</li>
     </ol>
-
     <h3>Lowercase letters list:</h3>
     <ol type="a">
         <li>Apples</li>
@@ -57,7 +52,6 @@
         <li>Lemons</li>
         <li>Oranges</li>
     </ol>
-
     <h3>Roman numbers list:</h3>
     <ol type="I">
         <li>Apples</li>
@@ -65,7 +59,6 @@
         <li>Lemons</li>
         <li>Oranges</li>
     </ol>
-
     <h3>Lowercase Roman numbers list:</h3>
     <ol type="i">
         <li>Apples</li>
@@ -85,7 +78,6 @@
         <li><a href="#5">Creating a table with TIMESTAMP DEFAULT NOW()</a></li>
         <li><a href="#6">Viewing a table definition</a></li>
     </ul>
-
     <h2 id="1">Basic CREATE TABLE statement</h2>
     <p>A very basic CREATE TABLE statement which should work in any SQL database:</p>
     <pre>
@@ -95,7 +87,6 @@ mysql> CREATE TABLE example (
 );
 Query OK, 0 rows affected (0.03 sec)
     </pre>
-
     <h2 id="2">Creating a table with a particular storage engine</h2>
     <p>MySQL provides a variety of different table types with different levels of functionality. The usual default, and most widely used, is InnoDB. Other storage types must be explicitly defined.</p>
     <pre>
@@ -107,7 +98,6 @@ Query OK, 0 rows affected (0.03 sec)
     </pre>
     <p>Note that beginning with MySQL 5.1, InnoDB is the preferred method of defining the storage type.</p>
     <p>Use SHOW CREATE TABLE (see <a href="#7">below</a>) to check that MySQL has created the table as you defined it</p>
-
     <h2 id="3">Creating a table with auto_increment</h2>
     <p>Often you'll want to be able to automatically assign a sequential value to a column.</p>
     <pre id="7">
@@ -129,7 +119,6 @@ mysql> SELECT * FROM example_autoincrement;
 +----+-------------+
 1 row in set (0.01 sec)
     </pre>
-
     <h2 id="4">Creating a table with the current timestamp</h2>
     <p>Often it's useful to have an automatic timestamp on each record. The MySQL special datatype TIMESTAMP enables you to keep track of changes to a record.</p>
     <pre>
@@ -151,7 +140,6 @@ mysql> SELECT * FROM example_timestamp;
 +----+-------------------------------------------+---------------------+
 1 row in set (0.01 sec)
     </pre>
-
     <h2 id="5">Creating a table with TIMESTAMP DEFAULT NOW()</h2>
     <p>MySQL supports the construct TIMESTAMP DEFAULT NOW() only from version 4.1:</p>
     <pre>
@@ -162,7 +150,6 @@ CREATE TABLE example_default_now (
 );
     </pre>
     <p>In this case, the column receives the initial value and is not changed during subsequent updates.</p>
-
     <h2 id="6">Viewing a table definition</h2>
     <p>For basic information on table columns, use DESC tablename:</p>
     <pre>

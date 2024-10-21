@@ -15,7 +15,6 @@
             align-items: flex-start;
             min-height: 100vh;
         }
-
         .form-container {
             background-color: rgb(12, 174, 202);
             padding: 50px;
@@ -24,7 +23,6 @@
             width: 800px;
             margin-right: 100px;
         }
-
         label {
             display: block;
             margin-bottom: 8px;
@@ -32,7 +30,6 @@
             font-weight: bold;
             text-align: left;
         }
-
         input[type="text"], input[type="email"], textarea {
             width: 100%;
             padding: 12px;
@@ -42,25 +39,21 @@
             font-size: 16px;
             text-align: left;
         }
-
         textarea {
             resize: vertical;
             height: 150px;
         }
-
         form {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
         }
-
         .button-container {
             display: flex;
             justify-content: center;
             width: 100%;
             margin-top: 10px;
         }
-
         input[type="submit"] {
             background-color: #155004;
             color: white;
@@ -71,31 +64,25 @@
             cursor: pointer;
             font-size: 18px;
         }
-
         input[type="submit"]:hover {
             background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-
     <div class="form-container">
         <form action="#" method="post">
             <label for="name">Nom:</label>
             <input type="text" id="name" name="name" placeholder="Nom" required>
-
             <label for="email">Correu electrònic:</label>
             <input type="email" id="email" name="email" placeholder="El teu correu electrònic" required>
-
             <label for="message">Missatge:</label>
             <textarea id="message" name="message" placeholder="Escriu el teu missatge..." required></textarea>
-
             <div class="button-container">
                 <input type="submit" value="Enviar">
             </div>
         </form>
     </div>
-
 </body>
 </html>
 
